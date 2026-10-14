@@ -1,0 +1,43 @@
+generated: '2026-10-14'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.comarch.com/trade-and-services/loyalty-marketing/news/loyalty-marketing-cloud-release-note-applies-to-version-lmc-116/
+sources:
+- https://www.comarch.com/trade-and-services/loyalty-marketing/news/loyalty-marketing-cloud-release-note-applies-to-version-lmc-116/
+- https://www.comarch.com/trade-and-services/loyalty-marketing/news/the-new-comarch-loyalty-management-57-whats-new/
+- https://www.comarch.com/trade-and-services/loyalty-marketing/news/whats-new-in-comarch-social-mining/
+- https://www.comarch.com/trade-and-services/loyalty-marketing/news/whats-new-in-comarch-campaign-management-27/
+entries:
+- breaking: false
+  highlights:
+  - We are excited to inform you that Comarch Loyalty Marketing Cloud , our end-to-end platform for building and managing immersive loyalty programs
+    & marketing campaigns, has just received an update!
+  - Closing Account from Mobile App – Your Members gain a new way to close their account directly through the app’s interface.
+  - Reward Image Upload – An option to import rewards images to catalog in bulk using an Excel file, sFTP, Data Hub or standard LMC Reward import
+    file.
+  - Changes in the API – Added points expiration forecast to B2B API and CashierID is now available in our gateway.
+  date: '2022-09-05'
+- breaking: false
+  highlights:
+  - In Q1 2019, we released version 5.7 of Comarch Loyalty Management , which now includes new features and updates.
+  - External events – create CLM source events based on any events generated outside CLM and provided by external systems.
+  - Near real-time data exports – export full data sets as JSON files or only the data changed since the last export via a JMS queue.
+  - Promotion budgetary management – track and limit the cost of promotion with warnings when thresholds are met.
+  date: '2019-04-25'
+- breaking: false
+  highlights:
+  - The new version 2.7 of Comarch Campaign Management has been released.
+  - 'Introduces new communication channels: mobile push & in‑box messages.'
+  - Redesigned Task Overview with calendar view, task list view, and new filters.
+  - New Drag&Drop Email Creator with predefined layouts, dynamic conditional blocks, and responsive design.
+  date: '2017-12-07'
+- breaking: false
+  highlights:
+  - Comarch Social Mining, which is a social media monitoring system, has been updated.
+  - Custom dashboards can be created by any system user and shared with others, with configurable layout.
+  - Ability to use segments in Spheres to monitor social media activity based on defined phrases or keywords.
+  - Ability to recognize brand ambassadors – verify whether loyalty program members are positive advocates.
+  date: '2017-12-07'
+current_version: LMC 1.16
+note: Versioning scheme not explicitly described on the pages; entries are listed newest first.
+docs: https://www.comarch.com/trade-and-services/loyalty-marketing/news/loyalty-marketing-cloud-release-note-applies-to-version-lmc-116/

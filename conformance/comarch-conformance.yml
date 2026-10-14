@@ -1,0 +1,55 @@
+generated: '2026-10-14'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.comarch.com/cyber-security/articles/navigating-gdpr-in-banking-insurance-and-financial-institutions/
+sources:
+- https://www.comarch.com/cyber-security/articles/navigating-gdpr-in-banking-insurance-and-financial-institutions/
+- https://www.comarch.com/trade-and-services/loyalty-marketing/blog/how-to-overcome-challenges-of-data-privacy-in-loyalty-programs/
+- https://www.comarch.com/trade-and-services/loyalty-marketing/blog/high-risk-related-to-data-privacy/
+- https://www.comarch.com/cyber-security/fintech-leaders-highlights-report-2022/
+standards:
+- id: iso-27001
+  conforms: true
+  evidence: They use safety protocols, certificates (such as ISO, ITIL, PCI DSS, CCAP, and GDPR – loyalty programs and platforms that are not
+    GDPR compliant simply cannot exist on the market)...
+- id: pci-dss
+  conforms: true
+  evidence: They use safety protocols, certificates (such as ISO, ITIL, PCI DSS, CCAP, and GDPR – loyalty programs and platforms that are not
+    GDPR compliant simply cannot exist on the market)...
+- id: gdpr
+  conforms: true
+  evidence: They use safety protocols, certificates (such as ISO, ITIL, PCI DSS, CCAP, and GDPR – loyalty programs and platforms that are not
+    GDPR compliant simply cannot exist on the market)...
+- id: ccpa
+  conforms: true
+  evidence: They use safety protocols, certificates (such as ISO, ITIL, PCI DSS, CCAP, and GDPR – loyalty programs and platforms that are not
+    GDPR compliant simply cannot exist on the market)...
+- id: pci-dss
+  conforms: true
+  evidence: They use safety protocols, certificates (such as ISO, ITIL, PCI DSS, CCAP, and GDPR – loyalty programs and platforms that are not
+    GDPR compliant simply cannot exist on the market)...
+- id: ccpa
+  conforms: true
+  evidence: They use safety protocols, certificates (such as ISO, ITIL, PCI DSS, CCAP, and GDPR – loyalty programs and platforms that are not
+    GDPR compliant simply cannot exist on the market)...
+- id: iso-27001
+  conforms: true
+  evidence: They use safety protocols, certificates (such as ISO, ITIL, PCI DSS, CCAP, and GDPR – loyalty programs and platforms that are not
+    GDPR compliant simply cannot exist on the market)...
+- id: openapi-3.1
+  conforms: true
+  evidence: the document declares 3.1.0
+- id: oauth2
+  conforms: false
+  evidence: no securitySchemes declared
+- id: rfc9457
+  conforms: false
+  evidence: no response declares application/problem+json
+- id: idempotency
+  conforms: false
+  evidence: no idempotency key parameter on mutating operations
+- id: pagination
+  conforms: true
+  evidence: list operations take page
+docs: https://www.comarch.com/cyber-security/articles/navigating-gdpr-in-banking-insurance-and-financial-institutions/
+note: 8 extracted row(s) were dropped because their quote was not on the page.

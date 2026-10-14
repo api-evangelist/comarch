@@ -1,0 +1,120 @@
+openapi: 3.1.0
+info:
+  title: Comarch Portal API
+  description: Comarch Portal API documentation.
+  version: 1.0.0
+servers:
+- url: "https://www.comarch.com/"
+paths:
+  /global/training/upcoming-training/params/command/get-trainings/node-id/10223:
+    get:
+      summary: Search Comarch trainings
+      operationId: searchTrainings_10223
+      parameters:
+      - name: phrase
+        in: query
+        description: "Keyword for the training search (e.g., JavaScript)"
+        required: false
+        schema:
+          type: string
+      - name: page
+        in: query
+        description: Page number of the results
+        required: false
+        schema:
+          type: integer
+          default: 1
+      - name: "location[]"
+        in: query
+        description: "Filter by location (city names, e.g. Kraków, Łódź, Warszawa)"
+        required: false
+        schema:
+          type: array
+          items:
+            type: string
+      - name: "form[]"
+        in: query
+        description: Filter by training form
+        required: false
+        schema:
+          type: array
+          items:
+            type: string
+            enum:
+            - e-Learning
+            - Stacjonarne
+            - Zdalne
+      - name: date
+        in: query
+        description: "Filter by date range in format YYYY-MM-DD - YYYY-MM-DD (e.g. 2026-05-28 - 2026-06-03 for range, or 2026-05-28 - 2026-05-28 for exact day)"
+        required: false
+        schema:
+          type: string
+      - name: "status[]"
+        in: query
+        description: "Filter by status (Promocja, Gwarantowane, Weekendowe)"
+        required: false
+        schema:
+          type: array
+          items:
+            type: string
+            enum:
+            - Promocja
+            - Gwarantowane
+            - Weekendowe
+      - name: X-Requested-With
+        in: header
+        description: Required AJAX header
+        required: true
+        schema:
+          type: string
+          default: XMLHttpRequest
+      responses:
+        '200':
+          description: List of trainings
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: integer
+                  data:
+                    type: object
+                    properties:
+                      page:
+                        type: integer
+                      totalItems:
+                        type: integer
+                      totalPages:
+                        type: integer
+                      results:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            title:
+                              type: string
+                            url_path:
+                              type: string
+                            DataRozpoczecia:
+                              type: string
+                            DataZakonczenia:
+                              type: string
+                            Lokalizacja:
+                              type: string
+                            Forma:
+                              type: string
+                            CenaNetto:
+                              type: number
+                            CenaBrutto:
+                              type: number
+                            Zdalne:
+                              type: boolean
+                            Promocja:
+                              type: boolean
+                            short_description:
+                              type: string
+                      filtersCounters:
+                        type: object
+                        description: Counters of available filters

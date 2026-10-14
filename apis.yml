@@ -1,23 +1,81 @@
 aid: comarch
 name: Comarch
-description: 'Comarch is a company surfaced via the API Evangelist harvest backlog (source: tag-qc) and
-  added to the network as a stub for full-pipeline profiling.'
+image: https://www.comarch.com/dist/img/portal/Comarch_Globabl_IT.png
+description: Comarch is a global IT solutions provider offering a wide range of services including enterprise software, cloud solutions, and digital
+  transformation tools. Founded in 1991 in Poland, Comarch serves customers across various industries such as telecommunications, finance, healthcare,
+  and public sector. The company focuses on delivering innovative technologies, data analytics, and customer relationship management platforms
+  to help businesses improve efficiency and drive growth. With a presence in over 30 countries, Comarch continues to expand its portfolio of products
+  and services, emphasizing security, scalability, and integration capabilities for modern enterprises.
 url: https://raw.githubusercontent.com/api-evangelist/comarch/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:tag-qc
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-14 (modular-v1; was harvest)
 specificationVersion: '0.20'
 created: '2026-10-13'
 modified: '2026-10-13'
 tags:
 - Company
-apis: []
+- IT
+- Software
+- Cloud
+- Enterprise
+- Global
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Spectral
+  url: rules/comarch-rules.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: ChangeLog
+  url: changelog/comarch-changelog.yml
+- type: Conformance
+  url: conformance/comarch-conformance.yml
+- type: LLMsTxt
+  url: llms/comarch-llms.txt
+- type: Hosts
+  url: hosts/comarch-hosts.yml
+- type: Security
+  url: https://www.comarch.com/trade-and-services/ict/knowledge/security/
+- type: Pricing
+  url: https://www.comarch.com/esef/pricing/
+- type: Newsroom
+  url: https://www.comarch.com/press-center/news/
+- type: Blog
+  url: https://blog.comarch.com/
+- type: GettingStarted
+  url: https://www.comarch.com/trade-and-services/data-management/clients-success-stories/comprehensive-edi-project-with-e-invoicing-and-a-self-onboarding-platform/
+- type: Documentation
+  url: https://help.comarch.com/
+- type: GitHubOrganization
+  url: https://github.com/comarch
+- type: VulnerabilityDisclosure
+  url: security/comarch-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/comarch-domain-security.yml
 - type: Website
   url: https://www.comarch.com
+apis:
+- name: Comarch Portal API
+  description: Comarch Portal API documentation.
+  humanURL: https://www.comarch.com/trade-and-services/ict/documentation/
+  baseURL: https://www.comarch.com/
+  aid: comarch:comarch-portal-api
+- aid: comarch:comarch-portal-api-api
+  name: Comarch Portal API API
+  description: Comarch Portal API documentation.
+  humanURL: https://www.comarch.com/openapi.yaml
+  baseURL: https://www.comarch.com/
+  properties:
+  - type: OpenAPI
+    url: openapi/_original/comarch-api-openapi.yml
+x-enrichment:
+  date: '2026-10-14'
+  status: enriched
+  artifacts_added: 13
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

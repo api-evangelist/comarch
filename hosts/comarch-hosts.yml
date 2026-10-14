@@ -1,0 +1,93 @@
+generated: '2026-10-14'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 6
+  own: 5
+  other_domain: 0
+  platform: 1
+  roles:
+  - api
+  - docs
+  - marketing
+  - other
+  - source
+  - website
+hosts:
+- host: api.comarch.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: comarch.com
+  role: api
+  relation: own
+- host: blog.comarch.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Blog
+  serves: []
+  registrable_domain: comarch.com
+  role: marketing
+  relation: own
+- host: career.comarch.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: comarch.com
+  role: other
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: help.comarch.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - Documentation
+  serves:
+  - docs
+  registrable_domain: comarch.com
+  role: docs
+  relation: own
+- host: www.comarch.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - Security
+  - Pricing
+  - Newsroom
+  - GettingStarted
+  - Website
+  serves:
+  - api
+  - docs
+  registrable_domain: comarch.com
+  role: website
+  relation: own
