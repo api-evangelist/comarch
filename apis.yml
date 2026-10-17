@@ -65,14 +65,15 @@ apis:
   humanURL: https://www.comarch.com/trade-and-services/ict/documentation/
   baseURL: https://www.comarch.com/
   aid: comarch:comarch-portal-api
-- aid: comarch:comarch-portal-api-api
-  name: Comarch Portal API API
-  description: Comarch Portal API documentation.
-  humanURL: https://www.comarch.com/openapi.yaml
-  baseURL: https://www.comarch.com/
+- aid: comarch:comarch-global-api
+  name: Comarch Global API
+  description: The Global API from Comarch — 1 operation(s) for global.
+  humanURL: https://www.comarch.com/trade-and-services/ict/documentation/
+  tags:
+  - Global
   properties:
   - type: OpenAPI
-    url: openapi/_original/comarch-api-openapi.yml
+    url: openapi/comarch-global-api-openapi.yml
 x-enrichment:
   date: '2026-10-14'
   status: enriched

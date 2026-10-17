@@ -1,0 +1,20 @@
+{
+  "provider": "comarch",
+  "sources": [
+    "_original/comarch-api-openapi.yml"
+  ],
+  "outputs": [
+    "comarch-global-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "comarch-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "comarch-api-openapi.yml: tagged paths GET /global/training/upcoming-training/params/command/get-trainings/node-id/10223 -> Global",
+    "comarch-api-openapi.yml: declared missing tag: Global",
+    "apis.yml register: written (+1 apis, 2 total)"
+  ],
+  "skipped": []
+}
